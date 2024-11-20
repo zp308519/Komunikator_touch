@@ -1,0 +1,54 @@
+﻿<Window x:Class="Komunikator_touch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Komunikator_touch"
+        mc:Ignorable="d"
+        Title="Comunicator" Height="450" Width="800">
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Needs:" Grid.Row="0" Grid.Column ="1" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Feelings:" Grid.Row="0" Grid.Column ="3" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBlock Text="Answers:" Grid.Row="0" Grid.Column ="5" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        
+        <Button x:Name="bEat" Content="Eat" Grid.Column="1" Grid.Row="1" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="S_KeyDown" />
+        <Button x:Name="bDrink" Content="Drink" Grid.Column="1" Grid.Row="2" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="S_KeyDown" />
+        <Button x:Name="bToilet" Content="Toilet" Grid.Column="1" Grid.Row="3" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="S_KeyDown" />
+        <Button x:Name="bBath" Content="Bath" Grid.Column="1" Grid.Row="4" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="S_KeyDown" />
+        <Button x:Name="bSleep" Content="Sleep" Grid.Column="1" Grid.Row="5" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="S_KeyDown" />
+
+        <Button x:Name="bPain" Content="Pain" Grid.Column="3" Grid.Row="1" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="W_KeyDown"/>
+        <Button x:Name="bSad" Content="Sad" Grid.Column="3" Grid.Row="2" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="W_KeyDown"/>
+        <Button x:Name="bHappy" Content="Happy" Grid.Column="3" Grid.Row="3" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="W_KeyDown"/>
+        <Button x:Name="bNeutral" Content="Neutral" Grid.Column="3" Grid.Row="4" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="W_KeyDown"/>
+        <Button x:Name="bBoredom" Content="Boredom" Grid.Column="3" Grid.Row="5" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="W_KeyDown"/>
+
+        <Button x:Name="bYes" Content="Yes" Grid.Column="5" Grid.Row="1" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="A_KeyDown" />
+        <Button x:Name="bNo" Content="No" Grid.Column="5" Grid.Row="2" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="A_KeyDown" />
+        <Button x:Name="bDontKnow" Content="Don't know" Grid.Column="5" Grid.Row="3" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="A_KeyDown" />
+        <Button x:Name="bMaybe" Content="Maybe" Grid.Column="5" Grid.Row="4" FontSize="30" FontWeight="Bold" Background="AntiqueWhite" Margin="10" BorderThickness="3" BorderBrush="Black" KeyDown="A_KeyDown"/>
+    </Grid>
+
+
+</Window>
